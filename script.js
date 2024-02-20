@@ -91,7 +91,7 @@ function disp(text) {
 }
 
 //----------------------------------------------
-const url = "http://www.omdbapi.com/?apikey=9166b911&s=";
+const url = "https://www.omdbapi.com/?apikey=9166b911&s=";
 let searched_Arr = [];
 
 let fav_Arr = JSON.parse(localStorage.getItem("favourite array")); //getting array from local storage
