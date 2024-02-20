@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  margin-inline: 5%;
+  background-color: rgb(199, 194, 194);
+}
+header {
+  display: grid;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+  font-size: x-large;
+}
+#logo {
+  height: 6vh;
+}
+.search {
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 7px;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+.search i {
+  height: 100%;
+}
+#search-input {
+  font-size: medium;
+  width: 100%;
+  background-color: gainsboro;
+  border: none;
+}
+#search-input:focus {
+  outline: none;
+}
+#message1,
+#message2 {
+  padding: 2px;
+  text-align: center;
+}
+
+#card-container,
+#fav-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 40%;
+  margin: 1.2%;
+  padding: 3%;
+  border: 2px solid;
+  box-shadow: 0 0 5px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.poster {
+  width: 95%;
+  border: 1px solid;
+}
+.title {
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.fas,
+.far {
+  font-size: 1.3rem;
+  color: red;
+}
+.far,
+.fas:hover {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  height: 0;
+}
+@media (min-width: 750px) {
+  h1 {
+    justify-content: center;
+    font-size: xxx-large;
+  }
+  #logo {
+    height: 12vh;
+  }
+  .search {
+    justify-self: center;
+    width: 50%;
+
+    font-size: xx-large;
+  }
+  #search-input {
+    font-size: x-large;
+  }
+  #message {
+    font-size: 1.2rem;
+  }
+  #card-container,
+  #fav-container {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .card {
+    width: 180px;
+    margin: 0.8%;
+    padding: 1%;
+  }
+  .poster {
+    width: 170px;
+  }
+}
