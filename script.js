@@ -32,7 +32,6 @@ function searchArrMaker(obj) {
     disp(obj.Error + "<hr>");
   }
 }
-
 // func to create cards from array
 function cardMaker(array, cont, message = "") {
   const container = document.getElementById(cont);
@@ -56,11 +55,11 @@ function cardMaker(array, cont, message = "") {
     container.appendChild(div);
 
     div.innerHTML = `<img class = "poster" src="${movieobj.Poster}" alt="movie's poster" onerror="this.src='assets/alt_image.png'"></img> 
-    <div class = "title"> Title: ${movieobj.Title}</div>
-    <div class = "type">Type: ${movieobj.Type}</div>
-    <div class = "year">Year: ${movieobj.Year}</div>
-    
-    <i class="${likebtnclass} fa-heart" id ="${movieobj.imdbID}" onclick='likeBtnLogic("${movieobj.imdbID}")'></i>`;
+      <div class = "title"> Title: ${movieobj.Title}</div>
+      <div class = "type">Type: ${movieobj.Type}</div>
+      <div class = "year">Year: ${movieobj.Year}</div>
+      
+      <i class="${likebtnclass} fa-heart" id ="${movieobj.imdbID}" onclick='likeBtnLogic("${movieobj.imdbID}")'></i>`;
   }
 }
 
